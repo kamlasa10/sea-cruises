@@ -1,0 +1,59 @@
+.user-block {
+  margin-top: rem(12px);
+
+  @include phones {
+    display: none;
+  }
+}
+.user-block__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.user-block__item {
+  margin-right: rem(40px);
+}
+.user-block__link {
+  position: relative;
+  display: block;
+  color: $darkBlue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: -18px;
+    width: 0;
+    height: 0;
+    border-left: rem(4px) solid transparent;
+    border-right: rem(4px) solid transparent;
+    border-top: rem(4px) solid $darkBlue;
+  }
+}
+.user-block__link--user {
+  padding-left: rem(17px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: rem(10px);
+    height: rem(12px);
+    background: url(../images/png-sprite.png) -82px -46px no-repeat;
+  }
+}
+.user-block__link--rubl {
+  padding-left: rem(17px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: rem(10px);
+    height: rem(12px);
+    background: url(../images/png-sprite.png) -44px -48px no-repeat;
+  }
+}

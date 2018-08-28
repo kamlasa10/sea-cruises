@@ -1,0 +1,84 @@
+.socials {
+    @include phones {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+.socials__text {
+    margin-bottom: 8px;
+  }
+  .socials__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @include phones {
+        justify-content: center;
+    }
+  }
+  .socials__item {
+    margin-right: 10px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .socials__link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background-color: $darkBlue;
+    border-radius: 50%;
+    transition: $smothy;
+  
+    &:hover {
+      background-color: darken($darkBlue, 10%);
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../images/png-sprite.png) 0 0 no-repeat;
+    }
+  }
+  .socials__link--vk {
+    &::before {
+      top: 8px;
+      left: 5px;
+      width: 18px;
+      height: 11px;
+      background-position: -44px -10px;
+    }
+  }
+  .socials__link--ok {
+    &::before {
+      top: 5px;
+      left: 9px;
+      width: 10px;
+      height: 16px;
+      background-position: -82px -10px;
+    }
+  }
+  .socials__link--youtube {
+    &::before {
+      top: 4px;
+      left: 7px;
+      width: 14px;
+      height: 18px;
+      background-position: -10px -10px;
+    }
+  }
+  .socials__link--inst {
+    &::before {
+      top: 7px;
+      left: 8px;
+      width: 14px;
+      height: 14px;
+      background-position: -10px -48px;
+    }
+  }

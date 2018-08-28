@@ -1,0 +1,118 @@
+.product {
+  padding: rem(60px) 0;
+}
+.product__block {
+  margin-bottom: rem(40px);
+  text-align: center;
+}
+.product__sorting {
+  position: relative;
+  color: $darkBlue;
+
+  &:hover {
+    color: lighten($darkBlue, 10%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: rem(9px);
+    right: rem(-20px);
+    width: 0;
+    height: 0;
+    border-left: rem(4px) solid transparent;
+    border-right: rem(4px) solid transparent;
+    border-top: rem(4px) solid $darkBlue;
+  }
+}
+.product__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+  margin-bottom: rem(20px);
+  background-color: $white;
+
+  @include tablets {
+    min-height: 100%;
+  }
+}
+.product__item--h50 {
+  height: 50%;
+
+  @include tablets {
+    height: 100%;
+  }
+}
+.product__item--d_none {
+  @include tablets {
+    display: none;
+  }
+}
+.product__img {
+  margin-bottom: rem(30px);
+}
+.product__img img {
+  @include  tablets {
+    width: 100%;
+    height: rem(272px);
+  }
+}
+.product__content {
+  padding-left: rem(36px);
+  padding-right: rem(36px);
+}
+.product__link {
+  position: relative;
+  display: inline-block;
+  margin-bottom: rem(30px);
+  vertical-align: top;
+  font-family: $RobotoSlab;
+  font-size: rem(18px);
+  color: #00a2dd;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: rem(23px);
+    right: rem(-20px);
+    width: 0;
+    height: 0;
+    border-left: rem(4px) solid transparent;
+    border-right: rem(4px) solid transparent;
+    border-top: rem(4px) solid #33c7fd;
+    transform: rotate(270deg);
+  }
+
+  @include tablets {
+    padding-right: 31%;
+  }
+}
+.product__desc {
+  margin: 0;
+  margin-bottom: rem(20px);
+  padding: 0;
+}
+.product__bold {
+  font-weight: bold;
+}
+.product__block-btn {
+  margin-top: rem(10px);
+  text-align: center;
+}
+.product-btn {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: rem(21px);
+    right: rem(21px);
+    width: 0;
+    height: 0;
+    border-left: rem(4px) solid transparent;
+    border-right: rem(4px) solid transparent;
+    border-top: rem(4px) solid $white;
+  }
+}

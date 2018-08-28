@@ -1,0 +1,21 @@
+.burger-menu {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: rem(420px);
+  margin: 0;
+  padding: rem(70px) rem(45px);
+  background-color: #0d3351;
+
+  @include phones {
+    top: 10%;       
+    left: 1%;
+    width: rem(350px);
+  }
+}
+.burger-menu a {
+  font-family: $RobotoSlab;
+  font-size: 18px;
+  line-height: 48px;
+  color: $white;
+}

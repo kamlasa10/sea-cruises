@@ -1,0 +1,19 @@
+.price {
+  margin-top: auto;
+  margin-bottom: rem(40px);
+}
+.price__text {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: rem(30px);
+  font-family: $RobotoSlab;
+  font-size: rem(30px);
+  line-height: rem(48px);
+}
+.price__old {
+  font-family: $RobotoSlab;
+  font-size: rem(18px);
+  line-height: rem(48px);
+  color: rgba($darkBlue, 0.55);
+  text-decoration: line-through;
+}

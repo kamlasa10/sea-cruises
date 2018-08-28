@@ -1,0 +1,65 @@
+*,*::before,
+*,*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+
+  @include  tablets {
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 13px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  color: $darkBlue;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  padding: 0 10px;
+}
+.hidden {
+  display: none;
+}
+.section-title {
+  font-family: $RobotoSlab;
+  font-size: rem(36px);
+  line-height: rem(48px);
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: rem(10px) rem(40px);
+  text-align: center;
+  color: $white;
+  background-color: #33c7fd;
+  transition: $smothy;
+
+  &:hover {
+    color: $white;
+    background-color: #13b0e9;
+    text-decoration: none;
+  }
+  &:active {
+    background-color: #64d6ff;
+  }
+}

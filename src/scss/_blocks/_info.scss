@@ -1,0 +1,15 @@
+.info {
+  @include phones {
+    display: none;
+  }
+}
+.info__phone {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.info__desc {
+  font-size: 10px;
+  line-height: 15px;
+}
